@@ -16,5 +16,5 @@ module.exports = ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}};
 ]]></content>
     <tabTrigger>rcco</tabTrigger>
     <scope>source.js</scope>
-    <description>React: component skeleton</description>
+    <description>React: commonjs component skeleton</description>
 </snippet>

@@ -16,5 +16,5 @@ export default React.createClass({
 ]]></content>
     <tabTrigger>rcc</tabTrigger>
     <scope>source.js</scope>
-    <description>React: component skeleton</description>
+    <description>React: es6 component skeleton</description>
 </snippet>
