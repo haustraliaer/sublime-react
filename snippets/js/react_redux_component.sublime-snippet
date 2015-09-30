@@ -1,0 +1,35 @@
+<snippet>
+    <content><![CDATA[
+import style from './style.css'
+import React from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import * as actionCreators from 'actions'
+
+function mapStateToProps(state) {
+  return {
+    ${1}: ${2}
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(actionCreators, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(
+  React.createClass({
+
+  	render: function() {
+  		return (
+  			${0:<div className={style.root} >boop</div>}
+  		);
+  	}
+
+  })
+)
+
+]]></content>
+    <tabTrigger>rrc</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: redux connect skeleton</description>
+</snippet>
