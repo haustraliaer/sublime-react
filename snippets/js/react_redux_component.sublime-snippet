@@ -21,7 +21,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(
 
   	render: function() {
   		return (
-  			${0:<div className={style.root} >boop</div>}
+  			<div className={style.root}>boop</div>
   		);
   	}
 
