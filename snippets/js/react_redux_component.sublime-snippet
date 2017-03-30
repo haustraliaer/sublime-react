@@ -1,33 +1,29 @@
 <snippet>
     <content><![CDATA[
-import style from './style.css'
 import React from 'react'
-import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import * as actionCreators from 'actions'
+
+import { Root } from './style.js'
 
 function mapStateToProps(state) {
   return {
-    ${1}: ${2}
+    some: 'prop'
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators(actionCreators, dispatch)
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(
+export default connect(mapStateToProps)(
   React.createClass({
 
-  	render: function() {
-  		return (
-  			<div className={style.root}>boop</div>
-  		);
-  	}
+    render() {s
+      return (
+        <Root>
+          boop
+        </Root>
+      )
+    }
 
   })
 )
-
 ]]></content>
     <tabTrigger>rrc</tabTrigger>
     <scope>source.js</scope>

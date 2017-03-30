@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+import styled from 'styled-components';
+import {vars} from 'css'
+import {mixins} from 'css'
+
+export const Root = styled.div`
+
+`
+]]></content>
+    <tabTrigger>scc</tabTrigger>
+    <scope>source.js</scope>
+    <description>Styled Components: style skeleton</description>
+</snippet>
